@@ -60,13 +60,13 @@ Berikut adalah gambar rangkaian LED dan tombol:
 
 ### 🧷 Pin Mapping (IOC Screenshot)
 
-Berikut ini adalah tampilan konfigurasi pin di STM32CubeMX:
+Berikut ini adalah tampilan konfigurasi pin di STM32CubeIDE:
 
 ![Pinout IOC](images/ioc_pinout.jpg)
 
 ### ⚙️ Konfigurasi GPIO
 
-- **PA0 dan PA1**: Mode: GPIO_Input, Pull-up, EXTI Trigger: Falling Edge
+- **PA0 dan PA1**: Mode: GPIO_EXTI, Pull-down, EXTI Trigger: Rising Edge
 - **PA5 dan PA6, PC13**: Mode: GPIO_Output, No Pull
 
 ![Konfigurasi GPIO](images/Konfigurasi_GPIO.jpg)
@@ -83,7 +83,7 @@ Berikut ini adalah tampilan konfigurasi pin di STM32CubeMX:
 2. Klik **Project > Build Project**.
 3. Sambungkan board STM32 ke komputer via ST-Link.
 4. Jalankan **Run > Debug As > STM32 Cortex-M C/C++ Application**.
-5. Tekan tombol PA0 dan PA1 untuk melihat variasi pola LED.
+5. Tekan tombol PA0 untuk melihat variasi pola LED dan PA1 untuk kembali ke mode default.
 
 ## 💾 Kode Penting
 
@@ -92,7 +92,7 @@ Beberapa file sumber utama yang relevan:
 - `Core/Src/main.c` – logika utama LED & interrupt
 - `Core/Inc/main.h` – definisi pin dan variabel
 - `Core/Src/stm32f4xx_it.c` – handler interrupt eksternal
-- `led_variasi_interrupt.ioc` – konfigurasi pin STM32CubeMX
+- `led_variasi_interrupt.ioc` – konfigurasi pin STM32CubeIDE
 
 ### 💾 Kode Penting di `main.c`
 
