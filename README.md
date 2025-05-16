@@ -69,24 +69,13 @@ Berikut ini adalah tampilan konfigurasi pin di STM32CubeMX:
 - **PA0 dan PA1**: Mode: GPIO_Input, Pull-up, EXTI Trigger: Falling Edge
 - **PA5 dan PA6, PC13**: Mode: GPIO_Output, No Pull
 
-![Konfigurasi GPIO](images/konfigurasi_gpio.jpg)
+![Konfigurasi GPIO](images/Konfigurasi_GPIO.jpg)
 
 ### ⚡ NVIC Settings
 
 - Aktifkan EXTI0 dan EXTI1 pada tab NVIC dengan prioritas default (0)
 
-![NVIC Settings](images/nvic_settings.jpg)
-
-## 🧾 Struktur Folder
-
-```
-led_variasi_interrupt/
-├── Core/
-│   ├── Inc/                # Header files (main.h, stm32f4xx_it.h, etc.)
-│   └── Src/                # Source files (main.c, interrupt handlers, etc.)
-├── .settings/              # STM32CubeIDE project settings
-├── led_variasi_interrupt.ioc  # Konfigurasi pin dan peripheral STM32CubeMX
-```
+![NVIC Settings](images/NVIC_Settings.jpg)
 
 ## 🛠️ Cara Build dan Upload
 
