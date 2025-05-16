@@ -165,3 +165,8 @@ uint32_t now = HAL_GetTick();
 
 Tonton demo pola nyala LED di video berikut:
 👉 [YouTube Demo: LED Variasi Interrupt STM32](https://youtube.com/shorts/wgtnLF8KAKQ?feature=share)
+
+## Anggota
+
+1. Hayunitya Edadwi Pratita (23/518670/TK/57134)
+2. Warda Saniia Fawahaana (23/518824/TK/57170)
